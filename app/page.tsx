@@ -10,7 +10,7 @@ const users = [
   { name: "김슬하", password: "4821", mission: "김원준에게 오늘 수고했다고 한마디 하기" },
   { name: "김원준", password: "7394", mission: "박기희에게 간식 하나 건네주기" },
   { name: "박기희", password: "1568", mission: "손예준에게 웃긴 이야기 하나 해주기" },
-  { name: "손예준", password: "9043", mission: "오윤선에게 응원 메시지 보내기" },
+  { name: "손예준", password: "9043", mission: "오윤선에게 오늘 수고했다고 한마디 하기" },
   { name: "오윤선", password: "2675", mission: "이준에게 물 한 번 챙겨주기" },
   { name: "이준", password: "8136", mission: "단톡에 장동현에게 칭찬 하나 하기" },
   { name: "장동현", password: "5402", mission: "정시현에게 칭찬 한 가지 말해주기" },
