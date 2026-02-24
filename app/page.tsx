@@ -7,16 +7,16 @@ import PaperTexture from './components/PaperTexture';
 import DoodleDecorations from './components/DoodleDecorations';
 
 const users = [
-  { name: "김슬하", password: "4821", mission: "김원준에게 오늘 수고했다고 한마디 하기" },
-  { name: "김원준", password: "7394", mission: "박기희에게 간식 하나 건네주기" },
-  { name: "박기희", password: "1568", mission: "손예준에게 웃긴 이야기 하나 해주기" },
-  { name: "손예준", password: "9043", mission: "오윤선에게 오늘 수고했다고 한마디 하기" },
-  { name: "오윤선", password: "2675", mission: "이준에게 물 한 번 챙겨주기" },
-  { name: "이준", password: "8136", mission: "단톡에 장동현에게 칭찬 하나 하기" },
-  { name: "장동현", password: "5402", mission: "정시현에게 칭찬 한 가지 말해주기" },
-  { name: "정시현", password: "6917", mission: "허에녹에게 오늘 컨디션 물어보기" },
-  { name: "허에녹", password: "3284", mission: "전지영에게 하이파이브 요청하기" },
-  { name: "전지영", password: "7759", mission: "김슬하에게 몰래 응원 한마디 남기기" },
+  { name: "김슬하", password: "4821", mission: "손예준에게 오늘 수요일 맞는지 진지하게 물어보기" },
+  { name: "김원준", password: "7394", mission: "오윤선에게 '지금 쉬는 시간 맞아?'라고 괜히 확인하기" },
+  { name: "박기희", password: "1568", mission: "이준 옆자리에 앉아서 아무 말 없이 10초 버티기" },
+  { name: "손예준", password: "9043", mission: "장동현에게 시간 물어본 뒤 고개 끄덕이며 떠나기" },
+  { name: "오윤선", password: "2675", mission: "정시현에게 지금 몇시야? 물어보기  " },
+  { name: "이준", password: "8136", mission: "허에녹에게 단체사진 찍을 때 같이 하트하기" },
+  { name: "장동현", password: "5402", mission: "전지영에게 갑자기 하이파이브 시도하기" },
+  { name: "정시현", password: "6917", mission: "김슬하에게 '지금 몇 시야?'라고 물어보기" },
+  { name: "허에녹", password: "3284", mission: "김원준에게 오늘 날씨 평가 부탁하기" },
+  { name: "전지영", password: "7759", mission: "박기희에게 '오늘 뭔가 분위기 다르다' 한마디 하기" },
 ];
 
 export default function Home() {
