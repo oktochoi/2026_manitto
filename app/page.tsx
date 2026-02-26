@@ -4,28 +4,68 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import PaperTexture from './components/PaperTexture';
-import DoodleDecorations from './components/DoodleDecorations';
+import DoodleDecorations from './components/DoodleDecorations'
 
 const users = [
-  { name: "김슬하", password: "4821", mission: "이준에게 다가가서 '혹시 오늘 중요한 날이야?'라고 진지하게 물어본 뒤 이유는 끝까지 말 안 하기" },
+  { 
+    name: "김슬하", 
+    password: "4821", 
+    mission: "정시현에게 다가가서 '혹시 나 오늘 뭔가 달라?'라고 물어본 뒤 대답 들으면 고개만 끄덕이기" 
+  },
 
-  { name: "김원준", password: "7394", mission: "박기희 옆에 앉아서 20초 동안 아무 말 없이 같은 방향 바라보다가 '타이밍 좋았다' 한마디 남기기" },
+  { 
+    name: "김원준", 
+    password: "7394", 
+    mission: "(해줘) 오윤선 옆에 서서 주변 둘러보다가 '지금 분위기 괜찮다'라고 혼잣말처럼 말하고 자리 이동하기" 
+  },
 
-  { name: "이준", password: "8136", mission: "오윤선에게 도움 요청하는 척 하다가 마지막에 '아 해결됐다 고마워!' 하고 혼자 해결하기" },
+  { 
+    name: "이준", 
+    password: "8136", 
+    mission: "전지영에게 다가가 '저 방금 되게 중요한 거 깨달았어여'라고 말한 뒤 도망치기" 
+  },
 
-  { name: "전지영", password: "7759", mission: "손예준에게 오늘 컨디션 점수를 10점 만점 기준으로 평가해달라고 하고 이유까지 인터뷰하기" },
+  { 
+    name: "전지영", 
+    password: "7759", 
+    mission: "허에녹에게 대화 끝날 때 악수 시도하며 “오늘 기억해둬”라고 말하기" 
+  },
 
-  { name: "손예준", password: "9043", mission: "장동현과 대화 중 상대 말에 갑자기 메모하는 척하며 '이거 중요한데?' 최소 2번 말하기" },
+  { 
+    name: "손예준", 
+    password: "9043", 
+    mission: "김슬하와 대화 중 갑자기 주변 확인 후 작은 목소리로 '여기 생각보다 위험해' 한 번 말하기" 
+  },
 
-  { name: "허에녹", password: "3284", mission: "김원준과 대화하다가 갑자기 '잠깐만 중요한 거 확인 좀' 하고 허공을 5초 바라본 뒤 아무 일 없던 것처럼 대화 이어가기" },
+  { 
+    name: "허에녹", 
+    password: "3284", 
+    mission: "박기희에게 질문 하나 한 뒤 대답 듣자마자 '역시 그럴 줄 알았어' 하고 의미심장하게 반응하기" 
+  },
 
-  { name: "정시현", password: "6917", mission: "김슬하에게 시간 물어본 뒤 '오늘 시간이 빨리 가는 이유 알아?'라며 의미심장하게 말하기" },
+  { 
+    name: "정시현", 
+    password: "6917", 
+    mission: "장동현에게 시간 물어본 뒤 '아 아직 그 타이밍 아니네'라고 말하고 떠나기" 
+  },
 
-  { name: "장동현", password: "5402", mission: "전지영에게 하이파이브 시도 후 실패해도 자연스럽게 다시 2번 더 시도하기" },
+  { 
+    name: "장동현", 
+    password: "5402", 
+    mission: "이준 지나갈 때 가볍게 어깨 톡 치고 '오늘 잘 부탁한다' 말한 뒤 이유 설명 안 하기" 
+  },
 
-  { name: "오윤선", password: "2675", mission: "정시현에게 오늘 일정 물어본 뒤 '오케이 이해했어'라고 말하고 다시 한 번 똑같이 물어보기" },
+  { 
+    name: "오윤선", 
+    password: "2675", 
+    mission: "손예준에게 오늘 컨디션 좋아 보인다고 말한 뒤 '근데 조금 수상하긴 해' 덧붙이기" 
+  },
 
-  { name: "박기희", password: "1568", mission: "이준에게 중요한 말 할 것처럼 부른 뒤 갑자기 '아 나 뭐 말하려고 했지?' 하고 떠나기" }
+  { 
+    name: "박기희", 
+    password: "1568", 
+    mission: "김원준을 불러 세운 뒤 '아니야 지금 말하면 안 되겠다' 하고 도망가기" 
+  }
 ];
 
 export default function Home() {
